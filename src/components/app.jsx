@@ -28,7 +28,7 @@ class App extends Component {
           </div>
         </div>
         <div className="right-scene">
-          <GifList gifs = { gifs } />
+          <GifList gifs = { this.state.gifs } />
         </div>
       </div>
     );
