@@ -9,7 +9,7 @@ class SearchBar extends Component {
     }
   }
 
-  handleChange = (event) => {
+  handleUpdate = (event) => {
     this.setState({
       term: event.target.value
     })
@@ -22,7 +22,7 @@ class SearchBar extends Component {
       value = { this.state.term }
       type = "text" 
       className = 'form-control form-search'
-      onChange = { this.handleChange }/>
+      onChange = { this.handleUpdate }/>
     );
   }
 }

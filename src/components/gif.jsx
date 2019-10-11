@@ -7,6 +7,10 @@ class Gif extends Component {
     }
   }
 
+  shouldComponentUpdate(nextProps, nextState) {
+    return nextProps.id !== this.props.id; // Don't call render if props.id didn't change
+  }
+
   render() {
     // use this to handle empty values
     const { id } = this.props;
